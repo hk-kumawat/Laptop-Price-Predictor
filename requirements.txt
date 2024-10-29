@@ -1,3 +1,4 @@
 streamlit
 scikit-learn
 xgboost
+pandas==1.5.3
