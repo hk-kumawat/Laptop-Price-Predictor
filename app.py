@@ -183,7 +183,3 @@ try:
         df = pickle.load(file)
 except Exception as e:
     st.error(f"Error loading the DataFrame: {e}")
-
-# Continue with your Streamlit app logic
-# For example, displaying the DataFrame
-st.write(df)
