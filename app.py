@@ -161,7 +161,11 @@ if st.button('✨ Predict Price ✨'):
     ips = 1 if ips == 'Yes' else 0
     X_res, Y_res = map(int, resolution.split('x'))
     ppi = ((X_res ** 2) + (Y_res ** 2)) ** 0.5 / screen_size
-    query = np.array([company, type, ram, weight, touchscreen, ips, ppi, cpu, hdd, ssd, gpu, os], dtype=object).reshape(1, 12)
+
+    query = np.array([company,type,ram,weight,touchscreen,ips,ppi,cpu,hdd,ssd,gpu,os])
+    query = np.array(query, dtype=object)
+
+    query = query.reshape(1,12)
     
     # Simulating a delay for demonstration purposes
     time.sleep(2)  # Simulate some processing time
