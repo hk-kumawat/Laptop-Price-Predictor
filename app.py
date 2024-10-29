@@ -174,3 +174,16 @@ if st.button('✨ Predict Price ✨'):
 
 # Footer with subtle animation
 st.markdown("<div class='footer'>Made with ❤️ by Harshal Kumawat | 2024</div>", unsafe_allow_html=True)
+
+
+
+# Load the pickled DataFrame
+try:
+    with open('df.pkl', 'rb') as file:
+        df = pickle.load(file)
+except Exception as e:
+    st.error(f"Error loading the DataFrame: {e}")
+
+# Continue with your Streamlit app logic
+# For example, displaying the DataFrame
+st.write(df)
