@@ -1,6 +1,6 @@
-streamlit
+streamlit==1.32.0
 scikit-learn
-pandas
+pandas==2.2.3
 numpy
 pickle-mixin
 pickleshare
