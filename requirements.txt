@@ -1,6 +1,6 @@
 streamlit
 scikit-learn
-pandas==2.2.3
+pandas
 numpy
 pickle-mixin
 pickleshare
