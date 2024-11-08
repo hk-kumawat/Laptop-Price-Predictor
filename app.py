@@ -5,7 +5,7 @@ import time
 
 # Load the model and data
 pipe = pickle.load(open('pipe.pkl', 'rb'))
-df = pickle.load(open('df.pkl', 'rb'))
+df = pickle.load(open('data.pkl', 'rb'))
 
 # CSS styling for enhanced UI effects, fixing overlay issues, and removing unwanted elements
 st.markdown("""
